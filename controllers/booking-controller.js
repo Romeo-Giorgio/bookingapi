@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
-import Booking from "../models/Booking";
-import Movie from "../models/movie";
-import User from "../models/User";
+import Booking from "../models/Booking.js";
+import Movie from "../models/Movie.js";
+import User from "../models/User.js";
 
 export const newBooking = async (req, res, next) => {
   const { movie, date, seatNumber, user } = req.body;
