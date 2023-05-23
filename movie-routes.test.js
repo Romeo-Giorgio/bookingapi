@@ -1,9 +1,9 @@
 // user.test.js
-import { getUserById } from "./controllers/user-controller";
-import User from "./models/User";
+import { getUserById } from "./controllers/user-controller.js";
+import User from "./models/user.js";
 
 // Mock the User model and findById function
-jest.mock("./models/User");
+jest.mock("./models/user.js");
 
 test("should get user by ID", async () => {
   const validUserId = "645e78c43b119de82549200a";
